@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minha Rotina</title>
+  <link rel="stylesheet" href="/css/global.css" />
+  <link rel="stylesheet" href="/css/rotina.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Minha Rotina</h1>
+
+    <section>
+      <h2>Hoje</h2>
+      <ul id="tarefas-hoje">
+        <li><input type="checkbox" /> Acordar 8h</li>
+        <li><input type="checkbox" /> <input type="text" placeholder="Nova tarefa..." /></li>
+        <li><input type="checkbox" /> <input type="text" placeholder="Nova tarefa..." /></li>
+      </ul>
+      <button id="add-tarefa">+</button>
+    </section>
+
+    <section>
+      <h2>Hábitos</h2>
+      <ul id="habitos">
+        <li><input type="checkbox" checked /> Beber água</li>
+        <li><input type="checkbox" /> Ler 10 min</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Semana</h2>
+      <div class="semana">
+        <span>S</span><span>T</span><span>Q</span><span>Q</span><span>S</span><span>S</span><span>D</span>
+      </div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

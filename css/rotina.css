@@ -1,0 +1,63 @@
+body {
+  font-family: sans-serif;
+  background: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"] {
+  flex: 1;
+  margin-left: 8px;
+  padding: 4px;
+}
+
+button#add-tarefa {
+  font-size: 20px;
+  width: 100%;
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  cursor: pointer;
+  background-color: #eaeaea;
+}
+
+.semana {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.semana span {
+  background: #eee;
+  padding: 8px;
+  border-radius: 5px;
+  width: 25px;
+  text-align: center;
+}
+
