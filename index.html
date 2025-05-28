@@ -1,27 +1,47 @@
+<!-- Declaração do tipo de documento e idioma principal -->
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+  <!-- Define a codificação de caracteres para UTF-8 -->
   <meta charset="UTF-8" />
+
+  <!-- Responsividade para dispositivos móveis -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Título da aba do navegador -->
   <title>Habitual</title>
+
+  <!-- Link para o arquivo de estilos da página inicial -->
   <link rel="stylesheet" href="/css/style.css" />
 </head>
+
 <body>
+  <!-- Fundo com imagem definida via CSS -->
   <div class="fundo"></div>
 
+  <!-- Painel central com saudação e módulos -->
   <div class="painel">
+
+    <!-- Saudação personalizada -->
     <h1>Olá, Mestre Oricher 👋</h1>
+
+    <!-- Subtítulo orientando o usuário -->
     <p>Escolha um módulo para começar</p>
 
+    <!-- Bloco de módulos disponíveis no superapp -->
     <div class="modulos">
+
+      <!-- Módulo 1: Minha Rotina -->
       <a href="rotina.html" class="modulo">
-        <div class="icone">🕒</div>
+        <div class="icone">🕒</div> <!-- Ícone representativo -->
         <div>
           <h3>Minha Rotina</h3>
           <p>Gerencie sua rotina diária</p>
         </div>
       </a>
 
+      <!-- Módulo 2: Lista de Tarefas (ainda não implementado) -->
       <a href="#" class="modulo">
         <div class="icone">✅</div>
         <div>
@@ -30,6 +50,7 @@
         </div>
       </a>
 
+      <!-- Módulo 3: Notas -->
       <a href="#" class="modulo">
         <div class="icone">📝</div>
         <div>
@@ -38,6 +59,7 @@
         </div>
       </a>
 
+      <!-- Módulo 4: Calendário -->
       <a href="#" class="modulo">
         <div class="icone">📅</div>
         <div>
@@ -45,7 +67,9 @@
           <p>Planeje eventos e compromissos</p>
         </div>
       </a>
+
     </div>
   </div>
 </body>
+
 </html>

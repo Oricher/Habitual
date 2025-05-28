@@ -1,41 +1,60 @@
+<!-- Declaração do tipo de documento e idioma -->
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+  <!-- Configuração de codificação e responsividade -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Título da aba do navegador -->
   <title>Minha Rotina</title>
+
+  <!-- Importação de arquivos CSS: estilo global e específico da página de rotina -->
   <link rel="stylesheet" href="/css/global.css" />
   <link rel="stylesheet" href="/css/rotina.css" />
 </head>
+
 <body>
+  <!-- Container principal da página, com estilo centralizado e fundo branco -->
   <div class="container">
+
+    <!-- Cabeçalho da página -->
     <h1>Minha Rotina</h1>
 
+    <!-- Seção de tarefas do dia -->
     <section>
+      <!-- Título dinâmico do dia (preenchido via JavaScript) -->
       <h2 id="titulo-hoje">Hoje</h2>
+
+      <!-- Lista de tarefas do dia -->
       <ul id="tarefas-hoje">
+        <!-- Tarefa fixa de exemplo -->
         <li><input type="checkbox" /> Acordar 8h</li>
+
+        <!-- Campos para inserção de novas tarefas -->
         <li><input type="checkbox" /> <input type="text" placeholder="Nova tarefa..." /></li>
         <li><input type="checkbox" /> <input type="text" placeholder="Nova tarefa..." /></li>
       </ul>
+
+      <!-- Botão para adicionar nova tarefa -->
       <button id="add-tarefa">+</button>
     </section>
 
+    <!-- Seção de hábitos diários -->
     <section>
       <h2>Hábitos</h2>
       <ul id="habitos">
+        <!-- Lista de hábitos padrão -->
         <li><input type="checkbox" checked /> Beber água</li>
         <li><input type="checkbox" /> Ler 10 min</li>
       </ul>
     </section>
 
-    <section>
-      <h2>Semana</h2>
-      <div class="semana">
-        <span>S</span><span>T</span><span>Q</span><span>Q</span><span>S</span><span>S</span><span>D</span>
-      </div>
-    </section>
   </div>
+
+  <!-- Importação do script JavaScript responsável pela lógica da rotina -->
   <script src="script.js"></script>
 </body>
+
 </html>
