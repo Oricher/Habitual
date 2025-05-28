@@ -1,75 +1,58 @@
-<!-- Declaração do tipo de documento e idioma principal -->
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-  <!-- Define a codificação de caracteres para UTF-8 -->
-  <meta charset="UTF-8" />
-
-  <!-- Responsividade para dispositivos móveis -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-  <!-- Título da aba do navegador -->
-  <title>Habitual</title>
-
-  <!-- Link para o arquivo de estilos da página inicial -->
-  <link rel="stylesheet" href="/css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habitual XP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/home.css">
 </head>
 
 <body>
-  <!-- Fundo com imagem definida via CSS -->
-  <div class="fundo"></div>
 
-  <!-- Painel central com saudação e módulos -->
   <div class="painel">
+    <h1>Bom dia, Mestre Oricher 👋</h1>
+    <p class="frase-dia">"1% Melhor que ontem."</p>
 
-    <!-- Saudação personalizada -->
-    <h1>Olá, Mestre Oricher 👋</h1>
+    <button class="botao-play" onclick="tocarMusica()">🎵 Tocar música</button>
+    <button class="botao-pause" onclick="pausarMusica()">⏸️ Pausar música</button>
+    <audio id="bg-music" loop>
+      <source src="/midia/Oh Please - Telecasted.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
 
-    <!-- Subtítulo orientando o usuário -->
-    <p>Escolha um módulo para começar</p>
-
-    <!-- Bloco de módulos disponíveis no superapp -->
     <div class="modulos">
-
-      <!-- Módulo 1: Minha Rotina -->
       <a href="rotina.html" class="modulo">
-        <div class="icone">🕒</div> <!-- Ícone representativo -->
+        <div class="icone">📆</div>
         <div>
-          <h3>Minha Rotina</h3>
-          <p>Gerencie sua rotina diária</p>
+          <h3>Cronograma do Dia</h3>
+          <p>Veja sua rotina planejada</p>
         </div>
       </a>
-
-      <!-- Módulo 2: Lista de Tarefas (ainda não implementado) -->
       <a href="#" class="modulo">
-        <div class="icone">✅</div>
+        <div class="icone">💰</div>
         <div>
-          <h3>Lista de Tarefas</h3>
-          <p>Mantenha suas tarefas em ordem</p>
+          <h3>Finanças</h3>
+          <p>Controle seus gastos e metas</p>
         </div>
       </a>
-
-      <!-- Módulo 3: Notas -->
       <a href="#" class="modulo">
-        <div class="icone">📝</div>
+        <div class="icone">📈</div>
         <div>
-          <h3>Notas</h3>
-          <p>Anote ideias rapidamente</p>
+          <h3>Investimentos</h3>
+          <p>Acompanhe sua evolução financeira</p>
         </div>
       </a>
-
-      <!-- Módulo 4: Calendário -->
       <a href="#" class="modulo">
-        <div class="icone">📅</div>
+        <div class="icone">🏆</div>
         <div>
-          <h3>Calendário</h3>
-          <p>Planeje eventos e compromissos</p>
+          <h3>Conquistas</h3>
+          <p>Metas concluídas e objetivos futuros</p>
         </div>
       </a>
-
     </div>
   </div>
-</body>
+<script src="musica.js"></script>
 
+</body>
 </html>
