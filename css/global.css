@@ -1,0 +1,20 @@
+.botao-voltar {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 10px 16px;
+  font-size: 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #007bff;
+  background-color: #eef6ff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  transition: transform 0.2s ease;
+}
+
+.botao-voltar:hover {
+  background-color: #d6eaff;
+  transform: translateY(-2px);
+}
