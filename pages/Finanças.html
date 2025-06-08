@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Finanças</title>
+  <link rel="stylesheet" href="/css/financas.css">
+  <link rel="stylesheet" href="/css/global.css">
+</head>
+<body>
+  <div class="container">
+    <h1>💰 Controle Financeiro</h1>
+
+    <form id="form-lancamento">
+      <select id="tipo">
+        <option value="entrada">Entrada</option>
+        <option value="saida">Saída</option>
+      </select>
+      <input type="number" id="valor" placeholder="Valor" required step="0.01">
+      <input type="text" id="descricao" placeholder="Descrição" required>
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <h2>Saldo: R$ <span id="saldo">0.00</span></h2>
+
+    <ul id="lista-lancamentos"></ul>
+
+    <a href="index.html" class="botao-voltar">🏠 Voltar ao Início</a>
+  </div>
+
+  <script src="/js/finanças.js"></script>
+</body>
+</html>
