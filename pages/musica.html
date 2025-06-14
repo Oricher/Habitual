@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Habitual com Música</title>
+  <link rel="stylesheet" href="/css/musicanew.css">
+</head>
+<body>
+  <header>
+    <div id="player">
+      <audio id="audio" src="/midia/Oh Please - Telecasted.mp3" loop></audio>
+      <button id="playPause">▶️</button>
+      <span id="musicaAtual">Oh Please - Telecasted</span>
+    </div>
+    <nav>
+      <button onclick="trocarPagina('cofre.html')">Cofre</button>
+      <button onclick="trocarPagina('financas.html')">Finanças</button>
+      <!-- Adicione outras páginas aqui -->
+    </nav>
+  </header>
+
+  <main>
+    <iframe id="conteudo" src="cofre.html" width="100%" height="600px" frameborder="0"></iframe>
+  </main>
+
+  <script src="/js/musicanew.js"></script>
+</body>
+</html>
